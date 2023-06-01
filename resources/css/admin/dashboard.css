@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,700&display=swap');
+
+:root
+{
+    --title-color : rgb(0, 0, 56);
+    --beautiful-back : rgba(0, 110, 255, 0.226) ;
+    --title-blur : rgb(132, 132, 132) ;
+    --women-color : blue;
+    --men-color : rgb(225, 0, 0);
+    --teacher-color : rgb(255, 181, 10);
+    --rooms-color : rgb(3, 190, 3);
+    --bg-first-graph: rgb(255, 255, 255);
+    --box-shadows : 5px 2px 10px rgb(215, 215, 215);
+}
+
+
+html, body
+{
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+.container
+{
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem  auto calc(14rem - 80%);
+}
+/* .container
+{
+    --title-color : rgb(255, 255, 255);
+    --beautiful-back : rgba(0, 110, 255, 0.226) ;
+    --title-blur : rgb(132, 132, 132) ;
+    --women-color : blue;
+    --men-color : rgb(225, 0, 0);
+    --teacher-color : rgb(255, 181, 10);
+    --rooms-color : rgb(3, 190, 3);
+    --bg-first-graph: #242526;
+    --box-shadows : 5px 2px 10px rgb(215, 215, 215);
+} */
+.header
+{
+    grid-column: 1/span 1;
+}
+
+.dashboard-content
+{
+    grid-column: 2 / span 1 ;
+    height: 100vh;
+    display: flex;
+
+    flex-direction: column;
+    /* border: 1px solid black; */
+}
+.first-title,.path-title
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    margin-top: 15px;
+}
+.first-title .icon
+{
+    font-size: 22px;
+    color: var(--title-color);
+}
+.first-title h2
+{
+    font-size: 16px;
+    margin-left: 10px;
+    color: var(--title-color);
+}
+.path-title
+{
+    margin-top: 5px;
+}
+.path-title .icon
+{
+    font-size: 14px;
+    color: var(--title-color);
+}
+.path-title h2
+{
+    font-size: 13px;
+    color: var(--title-color);
+    margin-left: 15px;
+}
+
+.beautiful--angelin
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    background-color: var(--beautiful-back);
+    margin-top: 30px;
+}
+.beautiful--angelin .icon
+{
+    font-size: 18px;
+    margin-left: 10px;
+    color: var(--title-color);
+}
+.beautiful--angelin div
+{
+    font-size: 13px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: var(--title-color);
+}
+
+.first--graphique
+{
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+
+.first--graphique .first--graphe-content
+{
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    height: 90px;
+    background-color: var(--bg-first-graph);
+    border-bottom: 3px solid var(--women-color);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.first--graphique .first--graphe-content:hover
+{
+    box-shadow: var(--box-shadows);
+    transform: translateY(-10px);
+}
+
+.first--graphique .first--graphe-content h6
+{
+    width: 100%;
+    text-transform: uppercase;
+    color: var(--title-blur);
+    margin-top: 14px;
+    margin-left: 12px;
+}
+
+.first--graphique .first--graphe-content div
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+
+.first--graphique .first--graphe-content div  .account
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 60%;
+    font-size: 20px;
+    color: var(--title-color);
+}
+.first--graphique .first--graphe-content div  .account .first
+{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.first--graphique .first--graphe-content div  .account .second
+{
+    font-size: 13px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    color: var(--women-color);
+    font-weight: bold;
+}
+
+.first--graphique .first--graphe-content div  .first-circle
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    background: conic-gradient(var(--women-color) 3.6deg ,#ededed 0deg);
+    border-radius: 50%;
+}
+.first--graphique .first--graphe-content div  .first-circle .second-circle
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+.first--graphique .first--graphe-content div  .first-circle .second-circle .percent
+{
+    font-size: 10px;
+    font-weight: bolder;
+    /* color: var(--title-color); */
+}
+
+.first--graphique .first--graphe-content-men
+{
+    background-color: var(--bg-first-graph);
+    border-bottom: 3px solid var(--men-color);
+}
+
+.first--graphique .first--graphe-content div  .account .second-men
+{
+    color: var(--men-color);
+}
+
+.first--graphique .first--graphe-content-teach
+{
+    background-color: var(--bg-first-graph);
+    border-bottom: 3px solid var(--teacher-color);
+}
+
+.first--graphique .first--graphe-content div  .account .second-teach
+{
+    color: var(--teacher-color);
+}
+
+.first--graphique .first--graphe-content-room
+{
+    background-color: var(--bg-first-graph);
+    border-bottom: 3px solid var(--rooms-color);
+}
+
+.first--graphique .first--graphe-content div  .account .second-room
+{
+    color: var(--rooms-color);
+}
+.content--graphique
+{
+    /* border: 1px solid black; */
+    margin-top: 50px;
+    /* width: 100%;
+    height: 300px; */
+}

@@ -1,0 +1,2445 @@
+/* ================================ ===============================LES REGLAGES DE BASES============================ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Montserrat&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital@0;1&display=swap'); */
+*
+{
+    margin: 0px;
+    padding: 0;
+    font-family: "Montserrat";
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; */
+
+    outline: none;
+}
+:root {
+    --swiper-pagination-color: rgba(114, 12, 224, 0.783);
+    --swiper-pagination-bullet-inactive-color: rgb(222, 222, 222);
+    --swiper-pagination-bullet-inactive-opacity: 1;
+    --swiper-pagination-bullet-size: 8px;
+    --swiper-pagination-bullet-horizontal-gap: 2px;
+    /* --swiper-pagination-bullet-width: 16px; */
+
+
+    --color-hero-primary : rgb(243, 243, 243) ;
+    --background-hero-primary : rgba(0, 0, 0, 0.8) ;
+    --background-All-container : rgb(255, 255, 255);
+    --btn-color-primary : #cf1d71 ;
+    --title-color :  rgb(114,12,224) ;
+    --color-diagrotron :  rgba(114, 12, 224, 0.783) ;
+    --background-title :  rgba(114,12,224,0.064);
+    --background-title- :  rgba(114, 12, 224, 0.315);
+    --box-shadow-title : 2px 2px 10px rgba(170, 170, 170, 0.501);
+    --box-shadow-admin :0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    --bloc-radius: 10px;
+    --background-first-content : rgba(152, 140, 146, 0.298) ;
+    --background-second-content : rgba(114, 12, 224, 0.445) ;
+    --pink-angelina : pink;
+    --background-exams : rgb(246, 131, 150);
+  }
+html, body,.herosection
+{
+    width: 100%;
+    height: 100%;
+
+}
+
+.first-container
+{
+    width: 100%;
+
+
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+}
+/* ============================================================= LES REGLAGES DE BASES============================ */
+
+
+/* =============================================================GESTION  DU HERO BANER ============================ */
+
+
+.herosection
+{
+    background: url("http://localhost:8000/imagesPages/img/pexels-cdc-3992949.jpg") fixed  ;
+    background-size: cover;
+    height: 100vh;
+}
+.herosection .hero_container
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.herosection .hero_container
+{
+    background-color: var(--background-hero-primary);
+    color: var(--color-hero-primary);
+}
+.hero--container--child
+{
+    width: max-content;
+    /* border: 1px solid white; */
+    margin-top: 150px;
+    margin-left: 300px;
+}
+.inscription-btn
+{
+    border: 2px solid white;
+    color: rgb(255, 255, 255);
+}
+.connection-btn
+{
+    background-color: var(--title-color);
+    border: 2px solid var(--title-color);
+    color: rgb(255, 255, 255);
+}
+.title
+{
+    font-weight: bolder;
+    font-size: 40px;
+}
+.hero--container--text
+{
+    width: 700px;
+    margin-top: 70px;
+    font-size: 13px;
+    color: rgb(172, 172, 172);
+}
+.connexion
+{
+    width:365px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+.inscription-btn
+{
+    transition: background-color 0.5s ease;
+}
+.connection-btn,.inscription-btn
+{
+    display: flex;
+    margin-top: 70px;
+    width: 120px;
+    height: 35px;
+    font-size: 15px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+}
+/* =============================================================GESTION  DU HERO BANER ============================ */
+
+
+/* =============================================================GESTION DES CLASSESET DES SERIES  ============================ */
+.courses_container
+{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin:70px 0;
+    background-color: var(--background-All-container);
+}
+.title_container ,.box-courses,.first-content,.shool-type,.small-style,.translate-part,.picture-icon
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title_container
+{
+    font-size: 20px;
+    width: 300px;
+    height: 60px;
+    margin-bottom: 15px;
+    background-color: var(--background-title);
+    border-left: 5px solid var(--title-color);
+}
+.box-courses
+{
+    width: 72%;
+    height: 500px;
+    margin-top: 20px;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+}
+.courses
+{
+    width: 270px;
+    height: 460px;
+    border-radius: var(--bloc-radius);
+    transition: width 0.1s ease-in-out;
+
+}
+.courses:hover
+{
+    width: 300px;
+    box-shadow: var(--box-shadow-title);
+}
+.first-content
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--background-first-content);
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+.first-content img[alt = "undraw"]
+{
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    top: 0;
+}
+.second-content
+{
+    width: 100%;
+    height: 20%;
+
+    background-color: var(--background-second-content);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+}
+.first-content:hover .second-content
+{
+    height:195px;
+}
+.title_container span
+{
+    padding-left: 10px;
+    color: var(--title-color);
+
+}
+
+.shool-type
+{
+    margin-top: 5px;
+    justify-content: space-between;
+}
+
+.shool-type .texte
+{
+    margin-left: 10px;
+    font-weight: normal;
+    color: white;
+    font-family: "Montserrat";
+}
+
+.shool-type .small-style
+{
+    width: 50px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-family: "Montserrat";
+    background-color: var(--title-color);
+    color: white;
+    margin-right: 20px;
+}
+
+.lorem
+{
+    color: var(--title-color);
+    font-weight: bolder;
+    font-size: 13px;
+    padding-right: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.translate-part
+{
+    border-top: 1px dashed rgb(255, 255, 255);
+    margin-top: 15px;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 83px;
+}
+.picture-icon
+{
+   width: 95%;
+   height: 50%;
+   justify-content: space-between;
+}
+.picture
+{
+    display: flex;
+    align-items: center;
+    width: 120px;
+    justify-content: space-around;
+    height: 30px;
+    /* */
+}
+.picture img[alt="profil"]
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transform: translateY(300%);
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+}
+.first-content:hover .picture img[alt="profil"],
+.first-content:hover .name ,
+.first-content:hover .icon,
+.first-content:hover .effectif-s i ,
+.first-content:hover .effectif-s .nombre ,
+.first-content:hover .more .more-link
+{
+    transform: translateY(0%);
+    visibility: visible;
+}
+.name
+{
+    font-size: 12px;
+    /* font-weight: bolder; */
+    color:white;
+    transform: translateY(300%);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.icon
+{
+    font-size: 15px;
+    color: var(--title-color);
+    margin-right: 16px;
+    transform: translateY(300%);
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.info
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black ;  */
+}
+.effectif-s
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    /* border: 1px solid black ;  */
+}
+
+.effectif-s i
+{
+    font-size: 16px;
+    color: var(--title-color);
+    margin-right: 5px;
+    transform: translateY(400%);
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+}
+.effectif-s .nombre
+{
+    color: white;
+    font-size: 12px;
+    width: auto;
+    transform: translateY(400%);
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    /* border: 1px solid black;     */
+}
+.more
+{
+    /* border: 1px solid black;  */
+    width: 85%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: -10px;
+}
+.more .more-link
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    letter-spacing: 5px;
+    color: white;
+    width: 45px;
+    height: 17px;
+    padding-bottom: 09px;
+    padding-left: 4px;
+    font-weight: bolder;
+    background-color: var(--title-color);
+    border-radius: 4px;
+    transform: translateY(400%);
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+}
+/* ============================================================GESTION DES CLASSESET DES SERIES  ============================ */
+
+
+
+/* ============================================================= GESTION DES RESULTAS  DES EXAMENS ============================ */
+
+.exams_results,.exams_container
+{
+    width: 100%;
+    height: 97.3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.exams_container
+{
+    border: 0px;
+    flex-direction: row;
+    height: 450px;
+    /* border: 1px solid black; */
+
+}
+.exams
+{
+    width:340px;
+    height: 450px;
+    background-color: var(--background-title);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition:  all 0.2s ease-in-out;
+}
+.exams:hover
+{
+    transform: translateY(-20px);
+    box-shadow: var(--box-shadow-title);
+}
+.exams h4
+{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: var(--title-color);
+}
+.cep, .bepc ,.bac
+{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: conic-gradient(var(--title-color) 3.6deg ,#ededed 0deg);
+
+}
+.circle
+{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: white;
+    color: black;
+    font-weight: bolder;
+}
+.description
+,.cep,.bepc ,.bac,.circle,
+.taux,.candidate,.percent,.number,.candidate-circle,.number-row,
+.rate,.first
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description .taux
+{
+    width: 80%;
+    justify-content: flex-start;
+    font-size: 14px;
+    font-weight: bolder;
+    margin-top: 15px;
+    /* border: 1px solid black; */
+}
+.description
+{
+    flex-direction: column;
+    width: 100%;
+
+}
+.candidate
+{
+    width: 80%;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+.candidate-percent-value ,.number
+{
+    font-size: 12px;
+}
+.candidate-percent-value
+{
+    color: black;
+}
+.number
+{
+    flex-direction: column;
+    /* border: 1px solid black; */
+}
+
+.number-row
+{
+    font-size: 14px;
+    font-weight: bolder;
+}
+.number,.first
+{
+    font-size: 14px;
+    font-weight: bolder;
+}
+.number h3
+{
+    color: var(--title-color);
+}
+.number div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.percent
+{
+    width: 50px;
+    height: 50px;
+    background:conic-gradient(var(--title-color) 3.6deg , #ededed 0deg) ;
+    border-radius: 50%;
+}
+.candidate-circle
+{
+    width: 46px;
+    height: 46px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+.rate
+{
+    margin-top: 10px;
+    width: 80%;
+    height: 50px;
+    justify-content: space-between;
+    flex-direction: column;
+    /* border: 1px solid black; */
+
+}
+.first
+{
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 8px;
+}
+
+.diagrotron
+{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    margin-left: 8px;
+    color: white;
+    font-size: 9px;
+    background-color: var(--color-diagrotron);
+}
+/* =============================================================GESTION DES RESULTAS  DES EXAMENS  ============================ */
+
+
+/* ============================================================= SOME DIRECTOR WORDs  ============================ */
+
+.admin-word
+{
+    width: 100%;
+    height: 450px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+swiper-container {
+    width: 900px;
+    height: 300px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    height: 280px;
+    /* background: #6c5151; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+  .first-part,.second-part,.first-part .content-title,  .admin-information ,.admin-fonction
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+  }
+
+
+  /* La première partie */
+  .first-part
+  {
+    width: 50%;
+    height: 100%;
+    justify-content: initial;
+    /* border: 1px solid black;  */
+  }
+  .first-part h5
+  {
+    width: 100%;
+    text-align: start;
+    color: var(--title-color);
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+  }
+
+  .first-part .content-title
+  {
+    font-weight: bolder;
+    font-size: 34px;
+    width: 100%;
+    align-items: flex-start;
+    /* border: 1px solid black;  */
+    margin-bottom: 18px;
+
+  }
+
+  .first-part .first-text,.first-part .second-text
+  {
+    width: 90%;
+    text-align: initial;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .first-part .first-text
+  {
+    margin-bottom: 25px;
+  }
+  /* La première partie */
+
+
+  /* La seconde  partie */
+  .second-part
+  {
+   width: 48%;
+   height: 200px;
+   box-shadow: var(--box-shadow-admin);
+   /* border: 1px solid black; */
+   justify-content: initial;
+   position: relative;
+  }
+
+  .admin-picture
+  {
+    width: 100%;
+    /* border: 1px solid black; */
+    text-align: initial;
+    position: absolute;
+    top: -38%;
+    transform: translateY(38%);
+  }
+  .second-part .admin-picture img
+  {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-left: 50px;
+
+  }
+
+  .admin-information
+  {
+    width: 100%;
+    margin-top: 55px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid black; */
+  }
+  .information
+  {
+    font-size: 12px;
+    text-align: initial;
+  }
+  .information .first-child
+  {
+    margin-bottom: 10px;
+    font-weight: bolder;
+  }
+  .admin-graduation
+  {
+    font-size: 13px;
+    color: var(--title-color);
+  }
+
+  .admin-content
+  {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .admin-content .content
+  {
+    width: 80%;
+    font-size: 13px;
+    text-align: initial;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .admin-content .icon-content
+  {
+    font-size: 35px;
+    margin-left: 65px;
+    margin-top: -8px;
+    margin-right: 20px;
+    color: var(--background-title-);
+  }
+  .admin-fonction
+  {
+        width: 85%;
+        font-size: 14px;
+        align-items: end;
+        margin-top: 15px;
+        font-weight: bolder;
+        color: var(--title-color);
+        /* border: 1px solid black; */
+  }
+
+  /* La seconde  partie */
+
+
+  /* ============================================================= SOME DIRECTOR WORDs  ============================ */
+
+  @media  screen and (max-width: 280px)
+  {
+    /* ===================Gestion du hero barner===================*/
+    .herosection
+    {
+        background: url("http://localhost:8000/imagesPages/img/pexels-cdc-3992949.jpg")   ;
+        background-size: cover;
+    }
+
+    .hero--container--child
+    {
+        width: max-content;
+        margin-top: 100px;
+        margin-left: 15px;
+        width: 90%;
+        /* border: 2px solid white; */
+    }
+    .inscription-btn
+    {
+        border: 1px solid white;
+    }
+    .title
+    {
+        font-weight: bolder;
+        margin-bottom: 5px;
+        font-size: 25px;
+    }
+    .hero--container--text
+    {
+        width: 250px;
+        margin-top: 20px;
+        font-size: 12px;
+        color: rgb(172, 172, 172);
+    }
+    .connexion
+    {
+        width:75%;
+    }
+    .inscription-btn
+    {
+        transition: background-color 0.5s ease;
+    }
+    .connection-btn,.inscription-btn
+    {
+        margin-top: 20px;
+        width: 75px;
+        height: 35px;
+        font-size: 12px;
+        border-radius: 15px;
+    }
+
+    /* ===================Gestion du hero barner===================*/
+
+    /* =============================================================GESTION DES CLASSESET DES SERIES  ============================ */
+    .courses_container
+    {
+        height: 1300px;
+        display: flex;
+        /* margin:70px 0; */
+    }
+    .title_container
+    {
+        font-size: 13px;
+        width: 200px;
+        height: 30px;
+        border-left: 2px solid var(--title-color);
+    }
+    .box-courses
+    {
+        width: 100%;
+        height: 1200px;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    .courses
+    {
+        width: 220px;
+        height: 350px;
+    }
+    .courses:hover
+    {
+        width: 250px;
+        box-shadow: var(--box-shadow-title);
+    }
+    .first-content
+    {
+        border-radius: 10px;
+    }
+    .first-content img[alt = "undraw"]
+    {
+        width: 180px;
+        height: 180px;
+    }
+    .second-content
+    {
+        height: 20%;
+    }
+    .first-content:hover .second-content
+    {
+        height:170px;
+    }
+
+    .shool-type .small-style
+    {
+        height: 25px;
+        border-radius: 5px;
+        font-size: 10px;
+        margin-right: 20px;
+    }
+
+    .lorem
+    {
+        font-size: 11px;
+        padding-right: 10px;
+        margin-top: 10px;
+    }
+
+    .name
+    {
+        font-size: 11px;
+    }
+
+    .icon
+    {
+        font-size: 12px;
+    }
+    /* ============================================================GESTION DES CLASSESET DES SERIES  ============================ */
+
+
+    /* ============================================================= GESTION DES RESULTAS  DES EXAMENS ============================ */
+
+    .exams_results,.exams_container
+    {
+        height: 1300px;
+        justify-content: space-between;
+    }
+    .exams_container
+    {
+        flex-direction: column;
+        height: 1200px;
+        /* border: 1px solid black; */
+    }
+    .exams
+    {
+        width:260px;
+        height: 370px;
+    }
+    .exams h4
+    {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    .cep, .bepc ,.bac
+    {
+        width: 70px;
+        height: 70px;
+    }
+    .circle
+    {
+        width: 64px;
+        height: 64px;
+    }
+    .description
+    ,.cep,.bepc ,.bac,.circle,
+    .taux,.candidate,.percent,.number,.candidate-circle,.number-row,
+    .rate,.first
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .description .taux
+    {
+        font-weight: normal;
+        margin-top: 12px;
+        font-size: 10px;
+        margin-left: -12px;
+        /* border: 1px solid black; */
+    }
+
+    .candidate
+    {
+        width: 85%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .candidate-percent-value ,.number
+    {
+        font-size: 10px;
+    }
+    .candidate-percent-value
+    {
+        color: black;
+    }
+    .number
+    {
+        flex-direction: column;
+        /*  */
+    }
+    .number-res
+    {
+        width: 60%;
+        display: flex;
+        align-items: flex-start;
+        /* border: 1px solid black; */
+        padding-left: 10px;
+    }
+    .number-row
+    {
+        font-size: 10px;
+        font-weight: normal;
+    }
+    .number,.first
+    {
+        font-size: 10px;
+        font-weight: normal;
+    }
+    .number h3
+    {
+        font-size: 10px;
+    }
+    .number div
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .percent
+    {
+        width: 40px;
+        height: 40px;
+    }
+    .candidate-circle
+    {
+        width: 36px;
+        height: 36px;
+    }
+    .rate
+    {
+        margin-top: 10px;
+        width: 85%;
+    }
+    .first
+    {
+        width: 100%;
+        justify-content: flex-start;
+        margin-bottom: 8px;
+    }
+
+    .diagrotron
+    {
+        width: 20px;
+        height: 20px;
+        color: white;
+        font-size: 8px;
+    }
+    /* =============================================================GESTION DES RESULTAS  DES EXAMENS  ============================ */
+
+    /* ============================================================= SOME DIRECTOR WORDs  ============================ */
+
+    .admin-word
+    {
+        height: 450px;
+        margin-top: 50px;
+        margin-bottom: 0;
+        display: flex;
+        margin-bottom: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    swiper-container {
+        width: 100%;
+        height: 400px;
+    }
+
+    swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        height: 340px;
+    }
+
+    /* La première partie */
+    .first-part
+    {
+        display: none;
+    }
+
+    /* La seconde  partie */
+    .second-part
+    {
+    width: 100%;
+    height: 340px;
+    }
+
+    .admin-picture
+    {
+        text-align: center;
+        top: 0%;
+    }
+    .second-part .admin-picture img
+    {
+        margin-left: 0px;
+    }
+
+    .admin-information
+    {
+        margin-top: 150px;
+    }
+    .information
+    {
+        font-size: 12px;
+        text-align: initial;
+    }
+    .information .first-child
+    {
+        margin-bottom: 10px;
+    }
+    .admin-graduation
+    {
+        font-size: 13px;
+    }
+
+    /* La seconde  partie */
+
+
+    /* ============================================================= SOME DIRECTOR WORDs  ============================ */
+
+  }
+
+  @media screen and (min-width : 281px) and (max-width: 500px)
+  {
+
+    /* ===================Gestion du hero barner===================*/
+    .herosection
+    {
+        background: url("http://localhost:8000/imagesPages/img/pexels-cdc-3992949.jpg")   ;
+        background-size: cover;
+    }
+
+    .hero--container--child
+    {
+        width: max-content;
+        margin-top: 100px;
+        margin-left: 15px;
+        width: 95%;
+        /* border: 1px solid white; */
+    }
+    .inscription-btn
+    {
+        border: 1px solid white;
+    }
+    .title
+    {
+        font-weight: bolder;
+        margin-bottom: 5px;
+        font-size: 25px;
+    }
+    .hero--container--text
+    {
+        width:100%;
+        margin-top: 20px;
+        font-size: 14px;
+        color: rgb(172, 172, 172);
+    }
+    .connexion
+    {
+        width:80%;
+    }
+    .inscription-btn
+    {
+        transition: background-color 0.5s ease;
+    }
+    .connection-btn,.inscription-btn
+    {
+        margin-top: 20px;
+        width: 95px;
+        height: 35px;
+        font-size: 14px;
+        border-radius: 15px;
+    }
+
+    /* ===================Gestion du hero barner===================*/
+
+    /* =============================================================GESTION DES CLASSESET DES SERIES  ============================ */
+    .courses_container
+    {
+        height: 1300px;
+        display: flex;
+        /* margin:70px 0; */
+    }
+    .title_container
+    {
+        font-size: 15px;
+        width: 250px;
+        height: 45px;
+        border-left: 2px solid var(--title-color);
+    }
+    .box-courses
+    {
+        width: 100%;
+        height: 1200px;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    .courses
+    {
+        width: 250px;
+        height: 350px;
+    }
+    .courses:hover
+    {
+        width: 270px;
+        box-shadow: var(--box-shadow-title);
+    }
+    .first-content
+    {
+        border-radius: 10px;
+    }
+    .first-content img[alt = "undraw"]
+    {
+        width: 180px;
+        height: 180px;
+    }
+    .second-content
+    {
+        height: 20%;
+    }
+    .first-content:hover .second-content
+    {
+        height:170px;
+    }
+
+    .shool-type .small-style
+    {
+        height: 25px;
+        border-radius: 5px;
+        font-size: 13px;
+        margin-right: 20px;
+    }
+
+    .lorem
+    {
+        font-size: 11px;
+        padding-right: 10px;
+        margin-top: 10px;
+    }
+
+    .name
+    {
+        font-size: 12px;
+    }
+
+    .icon
+    {
+        font-size: 14px;
+    }
+    /* ============================================================GESTION DES CLASSESET DES SERIES  ============================ */
+
+
+    /* ============================================================= GESTION DES RESULTAS  DES EXAMENS ============================ */
+
+    .exams_results,.exams_container
+    {
+        height: 1400px;
+        justify-content: space-between;
+    }
+    .exams_container
+    {
+        flex-direction: column;
+        height: 1300px;
+        /* border: 1px solid black; */
+    }
+    .exams
+    {
+        width:290px;
+        height: 400px;
+    }
+    .exams h4
+    {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    .cep, .bepc ,.bac
+    {
+        width: 78px;
+        height: 78px;
+    }
+    .circle
+    {
+        width: 70px;
+        height: 70px;
+    }
+    .description
+    ,.cep,.bepc ,.bac,.circle,
+    .taux,.candidate,.percent,.number,.candidate-circle,.number-row,
+    .rate,.first
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .description .taux
+    {
+        font-weight: normal;
+        margin-top: 12px;
+        font-size: 13px;
+        margin-left: -12px;
+        /* border: 1px solid black; */
+    }
+
+    .candidate
+    {
+        width: 85%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .candidate-percent-value ,.number
+    {
+        font-size: 12px;
+    }
+    .candidate-percent-value
+    {
+        color: black;
+    }
+    .number
+    {
+        flex-direction: column;
+        /*  */
+    }
+    .number-res
+    {
+        width: 60%;
+        display: flex;
+        align-items: flex-start;
+        /* border: 1px solid black; */
+        padding-left: 10px;
+    }
+    .number-row
+    {
+        font-size: 13px;
+        font-weight: normal;
+    }
+    .number,.first
+    {
+        font-size: 13px;
+        font-weight: normal;
+    }
+    .number h3
+    {
+        font-size: 15px;
+    }
+    .number div
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .percent
+    {
+        width: 46px;
+        height: 46px;
+    }
+    .candidate-circle
+    {
+        width: 42px;
+        height: 42px;
+    }
+    .rate
+    {
+        margin-top: 10px;
+        width: 85%;
+    }
+    .first
+    {
+        width: 100%;
+        justify-content: flex-start;
+        margin-bottom: 8px;
+    }
+
+    .diagrotron
+    {
+        width: 25px;
+        height: 25px;
+        color: white;
+        font-size: 10px;
+        font-weight: bolder;
+    }
+    /* =============================================================GESTION DES RESULTAS  DES EXAMENS  ============================ */
+
+    /* ============================================================= SOME DIRECTOR WORDs  ============================ */
+
+    .admin-word
+    {
+        height: 460px;
+        margin-top: 50px;
+
+        display: flex;
+        margin-bottom: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    swiper-container {
+        width: 100%;
+        height: 420px;
+    }
+
+    swiper-slide {
+        text-align: center;
+        font-size: 20px;
+        height: 340px;
+    }
+
+    /* La première partie */
+    .first-part
+    {
+        display: none;
+    }
+
+    /* La seconde  partie */
+    .second-part
+    {
+    width: 100%;
+    height: 380px;
+    }
+
+    .admin-picture
+    {
+        text-align: center;
+        top: 0%;
+    }
+    .second-part .admin-picture img
+    {
+        margin-left: 0px;
+    }
+
+    .admin-information
+    {
+        margin-top: 150px;
+    }
+    .information
+    {
+        font-size: 13px;
+        text-align: initial;
+    }
+    .information .first-child
+    {
+        margin-bottom: 10px;
+    }
+    .admin-graduation
+    {
+        font-size: 13px;
+    }
+    .admin-content .content
+    {
+        font-size: 15px;
+    }
+
+    /* La seconde  partie */
+
+
+    /* ============================================================= SOME DIRECTOR WORDs  ============================ */
+
+  }
+
+  @media screen and (min-width : 501px) and (max-width: 700px)
+  {
+        /* ===================Gestion du hero barner===================*/
+    .herosection
+    {
+        background: url("http://localhost:8000/imagesPages/img/pexels-cdc-3992949.jpg")   ;
+        background-size: cover;
+    }
+
+    .hero--container--child
+    {
+        width: max-content;
+        margin-top: 100px;
+        margin-left: 70px;
+        width: 80%;
+
+    }
+    .inscription-btn
+    {
+        border: 1px solid white;
+    }
+
+    .title
+    {
+        font-weight: bolder;
+        margin-bottom: 5px;
+        font-size: 30px;
+    }
+    .hero--container--text
+    {
+        width: 410px;
+        margin-top: 20px;
+        font-size: 15px;
+        color: rgb(172, 172, 172);
+    }
+    .connexion
+    {
+        width:50%;
+    }
+    .inscription-btn
+    {
+        transition: background-color 0.5s ease;
+    }
+    .connection-btn,.inscription-btn
+    {
+        margin-top: 20px;
+        width: 90px;
+        height: 35px;
+        font-size: 14px;
+        border-radius: 15px;
+    }
+
+    /* ===================Gestion du hero barner===================*/
+
+    /* =============================================================GESTION DES CLASSESET DES SERIES  ============================ */
+    .courses_container
+    {
+        height: 1400px;
+        display: flex;
+        /* border: 1px solid black; */
+    }
+    .title_container
+    {
+        font-size: 16px;
+        width: 270px;
+        height: 35px;
+        border-left: 2px solid var(--title-color);
+    }
+    .box-courses
+    {
+        width: 100%;
+        height: 1400px;
+        flex-direction: column;
+        justify-content: space-around;
+        /* border: 1px solid black;  */
+    }
+    .courses
+    {
+        width: 280px;
+        height: 350px;
+    }
+
+    .courses:hover
+    {
+        width: 300px;
+        box-shadow: var(--box-shadow-title);
+    }
+    .first-content
+    {
+        border-radius: 10px;
+    }
+    .first-content img[alt = "undraw"]
+    {
+        width: 180px;
+        height: 180px;
+    }
+    .second-content
+    {
+        height: 20%;
+    }
+    .first-content:hover .second-content
+    {
+        height:170px;
+    }
+
+    .shool-type .small-style
+    {
+        height: 25px;
+        border-radius: 5px;
+        font-size: 12px;
+        margin-right: 20px;
+    }
+
+    .lorem
+    {
+        font-size: 11px;
+        padding-right: 10px;
+        margin-top: 10px;
+    }
+
+    .name
+    {
+        font-size: 11px;
+    }
+
+    .icon
+    {
+        font-size: 12px;
+    }
+    /* ============================================================GESTION DES CLASSESET DES SERIES  ============================ */
+
+
+    /* ============================================================= GESTION DES RESULTAS  DES EXAMENS ============================ */
+
+    .exams_results,.exams_container
+    {
+        height: 1300px;
+        justify-content: space-between;
+    }
+    .exams_container
+    {
+        flex-direction: column;
+        height: 1200px;
+        /* border: 1px solid black; */
+    }
+    .exams
+    {
+        width:280px;
+        height: 380px;
+    }
+    .exams h4
+    {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    .cep, .bepc ,.bac
+    {
+        width: 74px;
+        height: 74px;
+    }
+    .circle
+    {
+        width: 68px;
+        height: 68px;
+    }
+    .description
+    ,.cep,.bepc ,.bac,.circle,
+    .taux,.candidate,.percent,.number,.candidate-circle,.number-row,
+    .rate,.first
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .description .taux
+    {
+        font-weight: normal;
+        margin-top: 12px;
+        font-size: 12px;
+        margin-left: -12px;
+        /* border: 1px solid black; */
+    }
+
+    .candidate
+    {
+        width: 85%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .candidate-percent-value ,.number
+    {
+        font-size: 12px;
+    }
+    .candidate-percent-value
+    {
+        color: black;
+    }
+    .number
+    {
+        flex-direction: column;
+        /*  */
+    }
+    .number-res
+    {
+        width: 60%;
+        display: flex;
+        align-items: flex-start;
+        /* border: 1px solid black; */
+        padding-left: 10px;
+    }
+    .number-row
+    {
+        font-size: 12px;
+        font-weight: normal;
+    }
+    .number,.first
+    {
+        font-size: 12px;
+        font-weight: normal;
+    }
+    .number h3
+    {
+        font-size: 13px;
+    }
+    .number div
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .percent
+    {
+        width: 42px;
+        height: 42px;
+    }
+    .candidate-circle
+    {
+        width: 38px;
+        height: 38px;
+    }
+    .rate
+    {
+        margin-top: 10px;
+        width: 85%;
+    }
+    .first
+    {
+        width: 100%;
+        justify-content: flex-start;
+        margin-bottom: 8px;
+    }
+
+    .diagrotron
+    {
+        width: 25px;
+        height: 25px;
+        color: white;
+        font-size: 10px;
+    }
+    .translate-part
+    {
+        margin-top: 18px;
+    }
+    /* =============================================================GESTION DES RESULTAS  DES EXAMENS  ============================ */
+
+    /* ============================================================= SOME DIRECTOR WORDs  ============================ */
+
+    .admin-word
+    {
+        height: 460px;
+        margin-top: 50px;
+        margin-bottom: 0;
+        display: flex;
+        /* justify-content: center; */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    swiper-container {
+        width: 100%;
+        height: 420px;
+    }
+
+    swiper-slide {
+        text-align: center;
+        font-size: 20px;
+        height: 340px;
+    }
+
+    /* La première partie */
+    .first-part
+    {
+        display: none;
+    }
+
+    /* La seconde  partie */
+    .second-part
+    {
+    width: 100%;
+    height: 360px;
+    }
+
+    .admin-picture
+    {
+        text-align: center;
+        top: 0%;
+    }
+    .second-part .admin-picture img
+    {
+        margin-left: 0px;
+    }
+
+    .admin-information
+    {
+        margin-top: 150px;
+    }
+    .information
+    {
+        font-size: 13px;
+        text-align: initial;
+    }
+    .information .first-child
+    {
+        margin-bottom: 10px;
+    }
+    .admin-graduation
+    {
+        font-size: 13px;
+    }
+    .admin-content .content
+    {
+        font-size: 15px;
+    }
+
+    /* La seconde  partie */
+
+
+    /* ============================================================= SOME DIRECTOR WORDs  ============================ */
+  }
+
+  @media screen and (min-width : 701px) and (max-width: 900px)
+  {
+
+       /* ===================Gestion du hero barner===================*/
+    .herosection
+    {
+        background: url("http://localhost:8000/imagesPages/img/pexels-cdc-3992949.jpg")   ;
+        background-size: cover;
+    }
+
+    .hero--container--child
+    {
+        width: max-content;
+        margin-top: 100px;
+        margin-left: 70px;
+        width: 85%;
+        /* border: 1px solid white; */
+    }
+    .inscription-btn
+    {
+        border: 1px solid white;
+    }
+
+    .title
+    {
+        font-weight: bolder;
+        margin-bottom: 5px;
+        font-size: 35px;
+    }
+    .hero--container--text
+    {
+        width: 600px;
+        margin-top: 20px;
+        font-size: 15px;
+        color: rgb(172, 172, 172);
+    }
+    .connexion
+    {
+        width:50%;
+    }
+    .inscription-btn
+    {
+        transition: background-color 0.5s ease;
+    }
+    .connection-btn,.inscription-btn
+    {
+        margin-top: 20px;
+        width: 90px;
+        height: 35px;
+        font-size: 14px;
+        border-radius: 15px;
+    }
+
+    /* ===================Gestion du hero barner===================*/
+
+    /* =============================================================GESTION DES CLASSESET DES SERIES  ============================ */
+    .courses_container
+    {
+        height: 1400px;
+        display: flex;
+        /* border: 1px solid black; */
+    }
+    .title_container
+    {
+        font-size: 20px;
+        width: 320px;
+        height: 60px;
+        /* margin-bottom: 5px; */
+        border-left: 2px solid var(--title-color);
+    }
+    .box-courses
+    {
+        width: 100%;
+        height: 1300px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .courses
+    {
+        width: 300px;
+        height: 350px;
+    }
+    .courses:hover
+    {
+        width: 320px;
+        box-shadow: var(--box-shadow-title);
+    }
+    .first-content
+    {
+        border-radius: 10px;
+    }
+    .first-content img[alt = "undraw"]
+    {
+        width: 180px;
+        height: 180px;
+    }
+    .second-content
+    {
+        height: 20%;
+    }
+    .first-content:hover .second-content
+    {
+        height:170px;
+    }
+
+    .shool-type .small-style
+    {
+        height: 25px;
+        border-radius: 5px;
+        font-size: 12px;
+        margin-right: 20px;
+    }
+
+    .lorem
+    {
+        font-size: 11px;
+        padding-right: 10px;
+        margin-top: 10px;
+    }
+
+    .name
+    {
+        font-size: 11px;
+    }
+
+    .icon
+    {
+        font-size: 12px;
+    }
+    /* ============================================================GESTION DES CLASSESET DES SERIES  ============================ */
+
+
+    /* ============================================================= GESTION DES RESULTAS  DES EXAMENS ============================ */
+
+    .exams_results,.exams_container
+    {
+        height: 1500px;
+        justify-content: space-between;
+    }
+    .exams_container
+    {
+        flex-direction: column;
+        height: 1400px;
+        /* border: 1px solid black; */
+    }
+    .exams
+    {
+        width:320px;
+        height: 430px;
+    }
+    .exams h4
+    {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    .cep, .bepc ,.bac
+    {
+        width: 80px;
+        height: 80px;
+    }
+    .circle
+    {
+        width: 76px;
+        height: 76px;
+    }
+    .description
+    ,.cep,.bepc ,.bac,.circle,
+    .taux,.candidate,.percent,.number,.candidate-circle,.number-row,
+    .rate,.first
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .description .taux
+    {
+        font-weight: normal;
+        margin-top: 12px;
+        font-size: 15px;
+        margin-left: -12px;
+        /* border: 1px solid black; */
+    }
+
+    .candidate
+    {
+        width: 85%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .candidate-percent-value ,.number
+    {
+        font-size: 14px;
+    }
+    .candidate-percent-value
+    {
+        color: black;
+    }
+    .number
+    {
+        flex-direction: column;
+        /*  */
+    }
+    .number-res
+    {
+        width: 60%;
+        display: flex;
+        align-items: flex-start;
+        /* border: 1px solid black; */
+        padding-left: 10px;
+    }
+    .number-row
+    {
+        font-size: 14px;
+        font-weight: normal;
+    }
+    .number,.first
+    {
+        font-size: 14px;
+        font-weight: normal;
+    }
+    .number h3
+    {
+        font-size: 15px;
+    }
+    .number div
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .percent
+    {
+        width: 50px;
+        height: 50px;
+    }
+    .candidate-circle
+    {
+        width: 46px;
+        height: 46px;
+    }
+    .rate
+    {
+        margin-top: 10px;
+        width: 85%;
+    }
+    .first
+    {
+        width: 100%;
+        justify-content: flex-start;
+        margin-bottom: 8px;
+    }
+
+    .diagrotron
+    {
+        width: 30px;
+        height:30px;
+        color: white;
+        font-size: 12px;
+    }
+    .translate-part
+    {
+        margin-top: 18px;
+    }
+    /* =============================================================GESTION DES RESULTAS  DES EXAMENS  ============================ */
+
+    /* ============================================================= SOME DIRECTOR WORDs  ============================ */
+
+    .admin-word
+    {
+        height: 400px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    swiper-container {
+        width: 100%;
+        height: 400px;
+    }
+
+    swiper-slide {
+        text-align: center;
+        font-size: 20px;
+        height: 300px;
+    }
+
+    /* La première partie */
+    .first-part
+    {
+        display: none;
+    }
+
+    /* La seconde  partie */
+    .second-part
+    {
+    width: 70%;
+    height: 340px;
+    }
+
+    .admin-picture
+    {
+        text-align: center;
+        top: 0%;
+    }
+    .second-part .admin-picture img
+    {
+        margin-left: 0px;
+    }
+
+    .admin-information
+    {
+        margin-top: 150px;
+    }
+    .information
+    {
+        font-size: 13px;
+        text-align: initial;
+    }
+    .information .first-child
+    {
+        margin-bottom: 10px;
+    }
+    .admin-graduation
+    {
+        font-size: 13px;
+    }
+    .admin-content .content
+    {
+        font-size: 15px;
+    }
+
+    /* La seconde  partie */
+
+
+    /* ============================================================= SOME DIRECTOR WORDs  ============================ */
+  }
+@media screen and (min-width : 901px) and (max-width: 1150px)
+{
+           /* ===================Gestion du hero barner===================*/
+    .herosection
+    {
+        background: url("http://localhost:8000/imagesPages/img/pexels-cdc-3992949.jpg")   ;
+        background-size: cover;
+    }
+
+    .hero--container--child
+    {
+        width: max-content;
+        margin-top: 100px;
+        margin-left: 90px;
+        width: 100%;
+    }
+    .inscription-btn
+    {
+        border: 1px solid white;
+    }
+    .title
+    {
+        font-weight: bolder;
+        margin-bottom: 5px;
+        font-size: 40px;
+        letter-spacing: 1px;
+    }
+    .hero--container--text
+    {
+        width: 800px;
+        margin-top: 20px;
+        font-size: 15px;
+        color: rgb(172, 172, 172);
+    }
+    .connexion
+    {
+        width:40%;
+    }
+    .inscription-btn
+    {
+        transition: background-color 0.5s ease;
+    }
+    .connection-btn,.inscription-btn
+    {
+        margin-top: 20px;
+        width: 90px;
+        height: 35px;
+        font-size: 14px;
+        border-radius: 15px;
+    }
+
+    /* ===================Gestion du hero barner===================*/
+
+    /* =============================================================GESTION DES CLASSESET DES SERIES  ============================ */
+    .courses_container
+    {
+        height: 600px;
+        display: flex;
+        justify-content: space-around;
+        /* border: 1px solid black; */
+    }
+    .title_container
+    {
+        font-size: 20px;
+        width: 320px;
+        height: 60px;
+        border-left: 2px solid var(--title-color);
+    }
+    .box-courses
+    {
+        width: 100%;
+        height: 500px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .courses
+    {
+        width:280px;
+        height: 350px;
+    }
+    .courses:hover
+    {
+        width: 300px;
+        box-shadow: var(--box-shadow-title);
+    }
+    .first-content
+    {
+        border-radius: 10px;
+    }
+    .first-content img[alt = "undraw"]
+    {
+        width: 180px;
+        height: 180px;
+    }
+    .second-content
+    {
+        height: 20%;
+    }
+    .first-content:hover .second-content
+    {
+        height:170px;
+    }
+
+    .shool-type .small-style
+    {
+        height: 25px;
+        border-radius: 5px;
+        font-size: 12px;
+        margin-right: 20px;
+    }
+
+    .lorem
+    {
+        font-size: 11px;
+        padding-right: 10px;
+        margin-top: 10px;
+    }
+
+    .name
+    {
+        font-size: 11px;
+    }
+
+    .icon
+    {
+        font-size: 12px;
+    }
+    /* ============================================================GESTION DES CLASSESET DES SERIES  ============================ */
+
+
+    /* ============================================================= GESTION DES RESULTAS  DES EXAMENS ============================ */
+
+    .exams_results,.exams_container
+    {
+        height: 700px;
+        justify-content: space-around;
+    }
+    .exams_container
+    {
+        flex-direction: row;
+        height: 600px;
+        /* border: 1px solid black; */
+    }
+    .exams
+    {
+        width:280px;
+        height: 430px;
+    }
+    .exams h4
+    {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    .cep, .bepc ,.bac
+    {
+        width: 70px;
+        height: 70px;
+    }
+    .circle
+    {
+        width: 64px;
+        height: 64px;
+    }
+    .description
+    ,.cep,.bepc ,.bac,.circle,
+    .taux,.candidate,.percent,.number,.candidate-circle,.number-row,
+    .rate,.first
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .description .taux
+    {
+        font-weight: normal;
+        margin-top: 12px;
+        font-size: 12px;
+        margin-left: -12px;
+        /* border: 1px solid black; */
+    }
+
+    .candidate
+    {
+        width: 85%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .candidate-percent-value ,.number
+    {
+        font-size: 10px;
+    }
+    .candidate-percent-value
+    {
+        color: black;
+    }
+    .number
+    {
+        flex-direction: column;
+        /*  */
+    }
+    .number-res
+    {
+        width: 60%;
+        display: flex;
+        align-items: flex-start;
+        /* border: 1px solid black; */
+        padding-left: 10px;
+    }
+    .number-row
+    {
+        font-size: 12px;
+        font-weight: normal;
+    }
+    .number,.first
+    {
+        font-size: 12px;
+        font-weight: normal;
+    }
+    .number h3
+    {
+        font-size: 13px;
+    }
+    .number div
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .percent
+    {
+        width: 40px;
+        height: 40px;
+    }
+    .candidate-circle
+    {
+        width: 34px;
+        height: 34px;
+    }
+    .rate
+    {
+        margin-top: 10px;
+        width: 85%;
+    }
+    .first
+    {
+        width: 100%;
+        justify-content: flex-start;
+        margin-bottom: 8px;
+    }
+
+    .diagrotron
+    {
+        width: 25px;
+        height:25px;
+        color: white;
+        font-size: 11px;
+    }
+    .translate-part
+    {
+        margin-top: 18px;
+    }
+    /* =============================================================GESTION DES RESULTAS  DES EXAMENS  ============================ */
+
+    /* ============================================================= SOME DIRECTOR WORDs  ============================ */
+
+    .admin-word
+    {
+        height: 400px;
+        margin-top: 50px;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    swiper-container {
+        width: 100%;
+        height: 400px;
+    }
+
+    swiper-slide {
+        text-align: center;
+        font-size: 20px;
+        height: 300px;
+    }
+
+    /* La première partie */
+    .first-part
+    {
+        display: none;
+    }
+
+    /* La seconde  partie */
+    .second-part
+    {
+    width: 70%;
+    height: 340px;
+    }
+
+    .admin-picture
+    {
+        text-align: center;
+        top: 0%;
+    }
+    .second-part .admin-picture img
+    {
+        margin-left: 0px;
+    }
+
+    .admin-information
+    {
+        margin-top: 150px;
+    }
+    .information
+    {
+        font-size: 13px;
+        text-align: initial;
+    }
+    .information .first-child
+    {
+        margin-bottom: 10px;
+    }
+    .admin-graduation
+    {
+        font-size: 13px;
+    }
+    .admin-content .content
+    {
+        font-size: 15px;
+    }
+
+    /* La seconde  partie */
+
+
+    /* ============================================================= SOME DIRECTOR WORDs  ============================ */
+
+}

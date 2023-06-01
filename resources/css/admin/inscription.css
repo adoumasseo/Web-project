@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns:10% 90%;
+    position: absolute;
+}
+.container
+{
+    display: grid;
+    width: 96%;
+    margin: 0px auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto;
+    transition: all 0.5s ease;
+
+}
+.container .active{
+    grid-template-columns: 78px auto;
+}
+.head
+{
+    display:flex;
+    position: relative;
+    border: solid 2px #210f3b;
+    width: 65em;
+    height: 125px;
+    margin-top: 3%;
+    padding: 2%;
+    border-top-left-radius: 10px;
+    margin-bottom: 4em;
+    background-color: #210f3b;
+    color:#fff;
+}
+h2
+{
+    left: 0px;
+    margin-right: 27em;
+}
+img
+{
+    right: 0px;
+    border-radius: 5px;
+}
+.titles
+{
+    position: absolute;
+    display: gird;
+    justify-content: center;
+}
+.table
+{
+    border-collapse: collapse;
+    min-width: 65em;
+    width: auto;
+    border: 1px solid #210f3b;
+    box-shadow: 0px 0px 10px#210f3b2a,
+    0px -0px 0px #210f3b38 ;
+}
+thead tr {
+    background:#210f3b ;
+    color: #fff;
+    height: 60px;
+    text-align: left;
+    padding: 2px;
+}
+th, td {
+    padding: 15px 20px;
+}
+tbody tr, td, th{
+    border: 1px solid #ddd;
+}
+h3{
+    font-size: 25px;
+    font-weight: 200;
+}
+#btn1:hover{
+    height: 40px;
+    min-width: 100px;
+    margin-right: 48em;
+    background-color: #25123eac;
+    color: #fff;
+    border-radius:8px;
+    box-shadow: none;
+}
+#btn1{
+    height: 40px;
+    min-width: 100px;
+    margin-right: 48em;
+    background-color: #210f3b;
+    color: #fff;
+    border-radius:8px;
+    box-shadow: none;
+    transition: 0.5s;
+}
+#btn2{
+    width: 50%;
+    height: 25px;
+    background-color: #552d8d;
+    color: #ffffffad;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+#btn2:hover{
+    background-color: #6f0df9;
+}
+#btn3{
+    width: 50%;
+    height: 25px;
+    background-color: rgba(185, 31, 31, 0.601);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+#btn3:hover{
+    background-color: rgba(224, 23, 23, 0.841);
+}

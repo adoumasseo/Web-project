@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100% ;
+    background: #fff;
+    color: #000;
+}
+footer{
+    flex-shrink: 0;
+    /* border-radius: 10px 10px 0 0; */
+    min-height: 35vh;
+    width: 100%;
+    padding: 10px 20px;
+    background: rgb(87, 14, 164);
+    color: #ffffffd8;
+    font-style: italic;
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Poppins', sans-serif;
+}
+.contenu-footer{
+    width: 75%;
+    display: flex;
+    justify-self: flex-end;
+    justify-content: flex-end;
+    align-items: flex-start;
+    font-size: 20px;
+}
+.bloc {
+    width: 25%;
+    margin: 10px 15px;
+    padding: 5px 10px;
+}
+.footer-services h3{
+    font-size: 1.2rem;
+}
+.liste-formation{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.liste-formation a{
+    text-decoration: none;
+    /* font-size: 1.1rem; */
+    font-size: 18px;
+    color: #ddd;
+    font-weight: 100;
+    transition: .6s;
+}
+.liste-formation a:hover{
+    color: #fcf9f9f5;
+    letter-spacing: 2px;
+}
+
+@media screen  and (max-width:1300px){
+    .contenu-footer{
+        width: 60%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .bloc{
+        width: 25%;
+        margin: 10px 15px;
+    }
+}
+@media screen  and (max-width:800px){
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .contenu-footer{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .bloc{
+        width: 25%;
+    }
+} 
+
+@media screen  and (max-width:350px){
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .contenu-footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .bloc{
+        width: 60%;
+        text-align: center;
+    }
+}
